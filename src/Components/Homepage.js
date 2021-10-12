@@ -1,5 +1,7 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
 import "./Styles/Homepage.css";
+// import Button from "@mui/material/Button";
 const Homepage = () => {
   const [message, setMessage] = useState("Hello");
 
