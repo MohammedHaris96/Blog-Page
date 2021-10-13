@@ -12,3 +12,7 @@
   font-weight: italic;
   cursor: pointer;
 }
+
+.main-navbar {
+  border-radius: 10px;
+}
