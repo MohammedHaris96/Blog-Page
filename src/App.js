@@ -8,6 +8,8 @@ function App() {
       <Homepage /> <Homepage /> <Homepage /> <Homepage />
       <Homepage /> <Homepage /> <Homepage /> <Homepage />
       <Homepage /> <Homepage /> <Homepage /> <Homepage /> <Homepage />{" "}
+      <Homepage /> <Homepage /> <Homepage /> <Homepage /> <Homepage />{" "}
+      <Homepage /> <Homepage /> <Homepage /> <Homepage />
       <Homepage /> <Homepage /> <Homepage />
     </div>
   );
