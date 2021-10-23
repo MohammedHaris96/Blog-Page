@@ -13,7 +13,7 @@ const Carouselmain = () => {
           />
           <Carousel.Caption>
             <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p>this is a test image.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
