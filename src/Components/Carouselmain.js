@@ -1,12 +1,12 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 
 const Carouselmain = () => {
   return (
     <Container>
-      <row>
-        <col md={6}>
+      <Row>
+        <Col md={6}>
           <div>
             <Carousel>
               <Carousel.Item interval={1000}>
@@ -22,8 +22,8 @@ const Carouselmain = () => {
               </Carousel.Item>
             </Carousel>
           </div>
-        </col>
-      </row>
+        </Col>
+      </Row>
     </Container>
   );
 };
