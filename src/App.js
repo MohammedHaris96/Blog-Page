@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Homepage />
-      <Carouselmain />
+      {/* <Carouselmain /> */}
     </div>
   );
 }

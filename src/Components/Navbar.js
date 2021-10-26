@@ -1,9 +1,10 @@
 import React from "react";
-import { Nav } from "react-bootstrap";
+import { Nav, Container, Row } from "react-bootstrap";
+import "./Styles/Navbar.css";
 
 const Navbar = () => {
   return (
-    <div>
+    <Row className="navbar">
       <Nav variant="tabs" defaultActiveKey="/home" className="main-navbar">
         <Nav.Item>
           <Nav.Link href="/home">Home</Nav.Link>
@@ -12,7 +13,7 @@ const Navbar = () => {
           <Nav.Link eventKey="link-1">About</Nav.Link>
         </Nav.Item>
       </Nav>
-    </div>
+    </Row>
   );
 };
 
