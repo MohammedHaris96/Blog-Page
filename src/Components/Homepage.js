@@ -3,6 +3,7 @@ const Homepage = () => {
   return (
     <Container>
       <h1>Hello Homepage</h1>
+      <h1>Hello Homepage</h1>
     </Container>
   );
 };
