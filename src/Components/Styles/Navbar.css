@@ -1,9 +1,8 @@
 .navbar {
-  border: 2px solid burlywood;
-
+  /* text-decoration: none; */
   background: rgba(0, 0, 0, 0.8);
 }
 
-/* .navbar-nav {
-  text-underline-offset: none !important;
-} */
+.main-navbar-link {
+  color: white;
+}

@@ -6,12 +6,16 @@ const Navbar = () => {
   return (
     <Container fluid>
       <Row className="navbar">
-        <Nav variant="tabs" defaultActiveKey="/home" className="main-navbar">
+        <Nav className="main-navbar">
           <Nav.Item>
-            <Nav.Link href="/home">Home</Nav.Link>
+            <Nav.Link href="/home" className="main-navbar-link">
+              Home
+            </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-1">About</Nav.Link>
+            <Nav.Link eventKey="link-1" className="main-navbar-link">
+              About
+            </Nav.Link>
           </Nav.Item>
         </Nav>
       </Row>
