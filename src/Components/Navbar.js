@@ -13,8 +13,13 @@ const Navbar = () => {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-1" className="main-navbar-link">
+            <Nav.Link href="/home" className="main-navbar-link">
               About
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/home" className="main-navbar-link">
+              More
             </Nav.Link>
           </Nav.Item>
         </Nav>
