@@ -1,8 +1,12 @@
 import { Container } from "react-bootstrap";
 const Homepage = () => {
-  return <Container>
-  <div className="homepage"></div>
-  </Container>;
+  return (
+    <Container fluid>
+      <div>
+        <h1>This is a container for the blog page</h1>
+      </div>
+    </Container>
+  );
 };
 
 export default Homepage;
