@@ -1,7 +1,8 @@
+import pic from ".pic.jpg";
 const AuthorImage = () => {
   return (
     <div>
-      <img src></img>
+      <img src={pic} alt=""></img>
     </div>
   );
 };
