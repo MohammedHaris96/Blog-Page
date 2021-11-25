@@ -1,8 +1,15 @@
-import pic from ".pic.jpg";
+import React from "react";
+// import img from "./Components/images/img.JPG";
+import "./Styles/AuthorImage.css";
+
 const AuthorImage = () => {
   return (
     <div>
-      <img src={pic} alt=""></img>
+      {/* <img src={img} alt="" /> */}
+
+      <div className="author-img">
+        <h1>hello</h1>
+      </div>
     </div>
   );
 };
