@@ -1,14 +1,19 @@
 import React from "react";
-// import img from "./Components/images/img.JPG";
+import { publicImage } from "../utils/functions";
 import "./Styles/AuthorImage.css";
-
+const imgUrl = "/assets/user.jpg";
+// import img from "./assets/a.jpg"
 const AuthorImage = () => {
   return (
     <div>
-      {/* <img src={img} alt="" /> */}
-
       <div className="author-img">
-        <h1>hello</h1>
+        <div className="author-image">
+          <img
+            src={publicImage(imgUrl)}
+            alt="author"
+            style={{ height: "200px", width: "300px", objectFit: "contain" }}
+          />
+        </div>
       </div>
     </div>
   );
