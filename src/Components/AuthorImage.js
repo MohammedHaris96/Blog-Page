@@ -11,7 +11,12 @@ const AuthorImage = () => {
           <img
             src={publicImage(imgUrl)}
             alt="author"
-            style={{ height: "200px", width: "300px", objectFit: "contain" }}
+            style={{
+              height: "500px",
+              width: "500px",
+              borderRadius: "50%",
+              objectFit: "contain",
+            }}
           />
         </div>
       </div>
