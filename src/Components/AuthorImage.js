@@ -12,7 +12,7 @@ const AuthorImage = () => {
             src={publicImage(imgUrl)}
             alt="author"
             style={{
-              height: "500px",
+              height: "600px",
               width: "500px",
               borderRadius: "50%",
               objectFit: "contain",
