@@ -5,6 +5,7 @@ const Homepage = () => {
     <div className="homepage-container ">
       <h1>This is a container for the blog page....</h1>
       <h1>This is Heading in main container</h1>
+      <h1>Helllo</h1>
       {/* <AuthorImage /> */}
     </div>
   );
