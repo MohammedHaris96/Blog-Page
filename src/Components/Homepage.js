@@ -6,6 +6,7 @@ const Homepage = () => {
       <h1>This is a container for the blog page....</h1>
       <h1>This is Heading in main container</h1>
       <h1>Hello</h1>
+      <h1>This is a component</h1>
       {/* <AuthorImage /> */}
     </div>
   );
