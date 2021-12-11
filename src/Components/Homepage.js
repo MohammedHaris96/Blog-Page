@@ -1,11 +1,15 @@
 import "./Styles/Homepage.css";
+import { Card } from "antd";
+const { Meta } = Card;
+
 // import AuthorImage from "./AuthorImage";
 const Homepage = () => {
+  // Array of objects for blog
   const blogs = [
     {
-      name: "vacation",
-      description: "This is my blog for the vacation",
-      title: "Vacation",
+      vacationName: "United Kingdom",
+      descriptionLondon: "This is my blog for the vacation",
+      titleUK: "Vacation",
     },
 
     {
@@ -22,18 +26,28 @@ const Homepage = () => {
   ];
 
   return (
-    <div className="homepage-container ">
-      <h1>This is a container for the blog page....</h1>
-      <h1>This is Heading in main the container</h1>
-      <h1>Hello</h1>
+    <>
+      <div className="homepage-container  ">
+        <h1>This is a container for the blog page....</h1>
 
-      <h1>This is a component in homepage</h1>
-      <h1>This is a component in homepage</h1>
-      {blogs.map((blog) => {
-        return <div>{blog.name}</div>;
-      })}
-      {/* <AuthorImage /> */}
-    </div>
+        <div className="blog-card">
+          <Card
+            hoverable
+            style={{ width: 240, borderRadius: "5px" }}
+            cover={<h4>Unexpected trip to United Kingdom</h4>}
+          >
+            {blogs.map((blog) => {
+              return (
+                <Meta
+                  title={blog.vacationName}
+                  description={blog.descriptionLondon}
+                />
+              );
+            })}
+          </Card>
+        </div>
+      </div>
+    </>
   );
 };
 
