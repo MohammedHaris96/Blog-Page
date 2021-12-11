@@ -1,5 +1,5 @@
 import "./Styles/Homepage.css";
-import { Card } from "antd";
+import { Card, Carousel } from "antd";
 const { Meta } = Card;
 
 // import AuthorImage from "./AuthorImage";
@@ -8,7 +8,8 @@ const Homepage = () => {
   const blogs = [
     {
       vacationName: "United Kingdom",
-      descriptionLondon: "This is my blog for the vacation",
+      descriptionLondon:
+        "This is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacation",
       titleUK: "Vacation",
     },
 
@@ -33,8 +34,17 @@ const Homepage = () => {
         <div className="blog-card">
           <Card
             hoverable
-            style={{ width: 240, borderRadius: "5px" }}
-            cover={<h4>Unexpected trip to United Kingdom</h4>}
+            style={{ width: 400, borderRadius: "5px" }}
+            cover={
+              <>
+                <div className="d-flex justify-content-center align-items-center">
+                  <span>
+                    <i class="fas fa-plane" style={{ fontSize: "20px" }}></i>
+                  </span>
+                  <h4 style={{ margin: "5px" }}>Visit to United Kingdom</h4>
+                </div>
+              </>
+            }
           >
             {blogs.map((blog) => {
               return (
