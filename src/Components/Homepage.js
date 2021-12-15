@@ -32,7 +32,7 @@ const Homepage = () => {
   return (
     <>
       <div className="homepage-container  ">
-        <h1>Heading------- for homepage(title). Check it out</h1>
+        <h1>Heading------- for homepage(title). The blog page</h1>
 
         <div className="blog-card d-flex justify-content-center ">
           {blogs.map((blog) => {
