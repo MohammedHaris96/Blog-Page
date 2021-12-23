@@ -15,6 +15,13 @@ const Homepage = () => {
     },
 
     {
+      name: "United Kingdom",
+      description:
+        "This is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacation",
+      titleUK: "Vacation",
+    },
+
+    {
       name: "Australia",
       description:
         "This is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacation",
@@ -34,7 +41,7 @@ const Homepage = () => {
       <div className="homepage-container  ">
         <h1>Heading------- for homepage(title). The blog page</h1>
         <h1>Heading------- for homepage(title). The blog page</h1>
-        
+
         <div className="blog-card d-flex justify-content-center ">
           {blogs.map((blog) => {
             return (
