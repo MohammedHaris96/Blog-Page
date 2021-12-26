@@ -44,6 +44,9 @@ const Homepage = () => {
           <BlogList
             blogs={blogs.filter((blogs) => blogs.title === "Holidays")}
           />
+          <BlogList
+            blogs={blogs.filter((blogs) => blogs.title === "Holidays")}
+          />
         </div>
       </div>
     </>
