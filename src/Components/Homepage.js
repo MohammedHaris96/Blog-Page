@@ -43,6 +43,13 @@ const Homepage = () => {
       title: "Vacation",
       id: 3,
     },
+    {
+      name: "Australia",
+      description:
+        "This is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacation",
+      title: "Vacation",
+      id: 6,
+    },
 
     {
       name: "America",
