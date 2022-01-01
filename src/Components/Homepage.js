@@ -1,6 +1,7 @@
 import "./Styles/Homepage.css";
+import axios from "axios";
 import BlogList from "./BlogList";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // import AuthorImage from "./AuthorImage";
 const Homepage = () => {
@@ -11,54 +12,34 @@ const Homepage = () => {
     setBlogs(tempBlogs);
   };
 
-  const [blogs, setBlogs] = useState([
-    {
-      name: "United Kingdom",
-      description:
-        "This is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacation",
-      title: "Holidays",
-      id: 1,
-    },
+  const [blogs, setBlogs] = useState(null);
 
-    {
-      name: "Spain",
-      description:
-        "This is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacation",
-      title: "Holidays",
-      id: 5,
-    },
+  // const getAllBlogs = async () => {
+  //   debugger;
+  //   //Loader for blogs
+  //   try {
+  //     let url = `//localhost:8000/blogs`;
+  //     const response = await axios.get(url);
+  //     console.log(response);
+  //     setBlogs(response.data.data);
+  //     //set loading false
+  //   } catch (error) {
+  //     // set loading = false
+  //   }
+  // };
 
-    {
-      name: "United Kingdom",
-      description:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-      title: "Holidays",
-      id: 2,
-    },
+  // getAllBlogs();
+  useEffect(() => {
+    debugger;
+    fetch("http://localhost:8000/blogs")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setBlogs(data);
+      });
+  }, []);
 
-    {
-      name: "Australia",
-      description:
-        "This is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacation",
-      title: "Vacation",
-      id: 3,
-    },
-    {
-      name: "Australia",
-      description:
-        "This is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacation",
-      title: "Vacation",
-      id: 6,
-    },
-
-    {
-      name: "America",
-      description:
-        "This is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacationThis is my blog for the vacation",
-      title: "Vacation",
-      id: 4,
-    },
-  ]);
   return (
     <>
       <div className="homepage-container  ">
@@ -66,7 +47,7 @@ const Homepage = () => {
 
         <div className="blog-card d-flex justify-content-center ">
           <BlogList
-            blogs={blogs.filter((blogs) => blogs.title === "Holidays")}
+{        blogs &&    blogs={blogs.filter((blogs) => blogs.title === "Holidays")}}
             deleteBlog={deleteBlog}
           />
         </div>
