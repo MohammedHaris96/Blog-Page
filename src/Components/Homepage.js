@@ -1,5 +1,4 @@
 import "./Styles/Homepage.css";
-import axios from "axios";
 import BlogList from "./BlogList";
 import { useState, useEffect } from "react";
 
@@ -13,6 +12,7 @@ const Homepage = () => {
   };
 
   const [blogs, setBlogs] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   // const getAllBlogs = async () => {
   //   debugger;
@@ -30,21 +30,24 @@ const Homepage = () => {
 
   // getAllBlogs();
   useEffect(() => {
-    debugger;
-    fetch("http://localhost:8000/blogs")
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        setBlogs(data);
-      });
+
+setTimeout(() => {
+  fetch("http://localhost:8000/blogs")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    setBlogs(data);
+    setIsLoading(false);
+  });
+}, 1000 )
   }, []);
 
   return (
     <>
       <div className="homepage-container  ">
         <h1>The blog page</h1>
-
+        {isLoading && <div>Is Loading.....</div>}
         <div className="blog-card d-flex justify-content-center ">
           {blogs && (
             <BlogList
