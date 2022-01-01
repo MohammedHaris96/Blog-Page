@@ -46,10 +46,12 @@ const Homepage = () => {
         <h1>The blog page</h1>
 
         <div className="blog-card d-flex justify-content-center ">
-          <BlogList
-{        blogs &&    blogs={blogs.filter((blogs) => blogs.title === "Holidays")}}
-            deleteBlog={deleteBlog}
-          />
+          {blogs && (
+            <BlogList
+              blogs={blogs.filter((blogs) => blogs.title === "Holidays")}
+              deleteBlog={deleteBlog}
+            />
+          )}
         </div>
       </div>
     </>
