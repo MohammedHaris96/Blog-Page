@@ -13,6 +13,7 @@ const Homepage = () => {
 
   const [blogs, setBlogs] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   // const getAllBlogs = async () => {
   //   debugger;
@@ -30,23 +31,32 @@ const Homepage = () => {
 
   // getAllBlogs();
   useEffect(() => {
-
-setTimeout(() => {
-  fetch("http://localhost:8000/blogs")
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    setBlogs(data);
-    setIsLoading(false);
-  });
-}, 1000 )
+    setTimeout(() => {
+      fetch("http://localhost:8000/blogs")
+        .then((response) => {
+          console.log(response);
+          if (!response.ok) {
+            throw Error("Error while fetching");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          setBlogs(data);
+          setIsLoading(false);
+          setError(false);
+        })
+        .catch((error) => {
+          setError(error.message);
+          setIsLoading(false);
+        });
+    }, 1000);
   }, []);
 
   return (
     <>
       <div className="homepage-container  ">
         <h1>The blog page</h1>
+        {error && <div>{error}</div>}
         {isLoading && <div>Is Loading.....</div>}
         <div className="blog-card d-flex justify-content-center ">
           {blogs && (
