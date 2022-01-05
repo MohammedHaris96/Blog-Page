@@ -1,6 +1,7 @@
 import "./Styles/Homepage.css";
 import BlogList from "./BlogList";
 import { useState, useEffect } from "react";
+import Footer from "./Footer";
 
 // import AuthorImage from "./AuthorImage";
 const Homepage = () => {
@@ -54,7 +55,7 @@ const Homepage = () => {
 
   return (
     <>
-      <div className="homepage-container  ">
+      <div className="homepage-container">
         <h1>The blog page</h1>
         {error && <div>{error}</div>}
         {isLoading && <div>Is Loading.....</div>}
@@ -67,6 +68,8 @@ const Homepage = () => {
           )}
         </div>
       </div>
+
+      <Footer />
     </>
   );
 };
