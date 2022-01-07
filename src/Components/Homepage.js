@@ -2,6 +2,7 @@ import "./Styles/Homepage.css";
 import BlogList from "./BlogList";
 import { useState, useEffect } from "react";
 import Footer from "./Footer";
+import { Skeleton } from "antd";
 
 // import AuthorImage from "./AuthorImage";
 const Homepage = () => {
@@ -50,7 +51,7 @@ const Homepage = () => {
           setError(error.message);
           setIsLoading(false);
         });
-    }, 1000);
+    }, 5000);
   }, []);
 
   return (
@@ -58,15 +59,18 @@ const Homepage = () => {
       <div className="homepage-container">
         <h1>The blog page</h1>
         {error && <div>{error}</div>}
-        {isLoading && <div>Is Loading.....</div>}
-        <div className="blog-card d-flex justify-content-center ">
-          {blogs && (
-            <BlogList
-              blogs={blogs.filter((blogs) => blogs.title === "Holidays")}
-              deleteBlog={deleteBlog}
-            />
-          )}
-        </div>
+        {/* {isLoading && <div>Is Loading.....</div>} */}
+
+        <Skeleton active loading={isLoading}>
+          <div className="blog-card d-flex justify-content-center ">
+            {blogs && (
+              <BlogList
+                blogs={blogs.filter((blogs) => blogs.title === "Holidays")}
+                deleteBlog={deleteBlog}
+              />
+            )}
+          </div>
+        </Skeleton>
       </div>
 
       <Footer />
