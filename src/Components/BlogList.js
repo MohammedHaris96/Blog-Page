@@ -26,7 +26,7 @@ const BlogList = ({ blogs, deleteBlog }) => {
                       style={{ fontSize: "20px" }}
                     ></i>
                   </span>
-                  <h4 style={{ margin: "5px" }}>Visit to United Kingdom</h4>
+                  <h4 style={{ margin: "5px" }}>Visit to United</h4>
                 </div>
               </>
             }
