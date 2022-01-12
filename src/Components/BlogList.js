@@ -1,4 +1,4 @@
-import { Card } from "antd";
+import { Card, Tooltip } from "antd";
 import Meta from "antd/lib/card/Meta";
 import React from "react";
 
@@ -32,7 +32,11 @@ const BlogList = ({ blogs, deleteBlog }) => {
             }
           >
             <Meta title={blog.name} description={blog.description} />
-            <button onClick={() => deleteBlog(blog.id)}>Delete</button>
+            <Tooltip title="Delete">
+              <span onClick={() => deleteBlog(blog.id)}>
+                <i class="fas fa-trash"></i>
+              </span>
+            </Tooltip>
           </Card>
         );
       })}
