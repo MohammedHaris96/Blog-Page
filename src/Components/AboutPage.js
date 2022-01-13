@@ -4,7 +4,7 @@ import Footer from "./Footer";
 const AboutPage = () => {
   return (
     <div className="homepage-container  ">
-      <h1>lorem ipsum dolor sit amet, consectetur adip</h1>
+      <h1>lorem ipsum dolor sit amet</h1>
 
       <Footer />
     </div>
