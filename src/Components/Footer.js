@@ -6,6 +6,7 @@ const Footer = () => {
       <h1>Footer Blog Page New</h1>
       <h1>Footer Blog Page New</h1>
       <h1>Footer Blog Page New</h1>
+      <h1>Footer Blog Page New</h1>
     </div>
   );
 };
