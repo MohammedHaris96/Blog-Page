@@ -57,20 +57,8 @@ const Homepage = () => {
   return (
     <>
       <div className="homepage-container">
-        <h1>The blog page</h1>
-        {error && <div>{error}</div>}
-        {/* {isLoading && <div>Is Loading.....</div>} */}
-
-        <Skeleton active loading={isLoading}>
-          <div className="blog-card d-flex justify-content-center ">
-            {blogs && (
-              <BlogList
-                blogs={blogs.filter((blogs) => blogs.title === "Holidays")}
-                deleteBlog={deleteBlog}
-              />
-            )}
-          </div>
-        </Skeleton>
+ <div className="intro-content"></div>
+ <div className="homepage-img"></div>
       </div>
 
       <Footer />

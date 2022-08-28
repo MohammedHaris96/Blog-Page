@@ -9,7 +9,6 @@ const Navbar = () => {
       <Row className="navbar">
         <div className="nav-links d-flex">
           <div className="m-2">
-            {" "}
             <Link to="/">Home</Link>
           </div>
           <div className="m-2">

@@ -21,8 +21,21 @@
 
 .homepage-container {
   height: 800px;
-  background-color: gainsboro;
+  background-color: #ffffff;
   font-family: "Poppins", sans-serif;
+  display: flex;
+}
+
+.intro-content {
+  height: 500px;
+  background-color: rgb(224, 219, 219);
+  width: 50%;
+}
+
+.homepage-img {
+  height: 500px;
+  background-color: rgb(206, 206, 206);
+  width: 50%;
 }
 
 .blog-card {
