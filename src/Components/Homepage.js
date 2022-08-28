@@ -3,6 +3,7 @@ import BlogList from "./BlogList";
 import { useState, useEffect } from "react";
 import Footer from "./Footer";
 import { Skeleton } from "antd";
+import { Stack } from "@mui/material";
 
 // import AuthorImage from "./AuthorImage";
 const Homepage = () => {
@@ -57,8 +58,15 @@ const Homepage = () => {
   return (
     <>
       <div className="homepage-container">
- <div className="intro-content"></div>
- <div className="homepage-img"></div>
+        <div className="intro-content">
+          <div className="text-content">
+            <h4>Hi There,</h4>
+          </div>
+          <div className="text-content-name">
+            I am Har<span className="name-auth">i</span>s
+          </div>
+        </div>
+        <div className="homepage-img"></div>
       </div>
 
       <Footer />

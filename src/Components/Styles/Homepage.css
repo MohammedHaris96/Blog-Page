@@ -27,9 +27,30 @@
 }
 
 .intro-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   height: 500px;
+  padding: 0px 20px 0px 20px;
   background-color: rgb(224, 219, 219);
   width: 50%;
+}
+
+.name-auth {
+  color: #f0214f;
+}
+
+.text-content {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+
+.text-content-name {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  font-size: 100px;
 }
 
 .homepage-img {
