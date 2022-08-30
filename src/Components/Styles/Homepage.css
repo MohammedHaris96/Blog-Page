@@ -38,12 +38,14 @@
 
 .name-auth {
   color: #f0214f;
+  font-family: "Josefin Slab", serif;
 }
 
 .text-content {
   display: flex;
   justify-content: start;
   width: 100%;
+  font-family: "Josefin Slab", serif;
 }
 
 .text-content-name {
@@ -51,6 +53,7 @@
   justify-content: start;
   width: 100%;
   font-size: 100px;
+  font-family: "Josefin Slab", serif;
 }
 
 .homepage-img {
