@@ -30,7 +30,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 500px;
+  height: 800px;
   padding: 0px 20px 0px 20px;
   background-color: rgb(224, 219, 219);
   width: 50%;
@@ -56,10 +56,22 @@
   font-family: "Josefin Slab", serif;
 }
 
+.text-profession {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  font-size: 50px;
+  font-family: "Josefin Slab", serif;
+}
+
 .homepage-img {
-  height: 500px;
+  height: 800px;
   background-color: rgb(206, 206, 206);
   width: 50%;
+}
+
+.user-img {
+  height: 100%;
 }
 
 .blog-card {

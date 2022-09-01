@@ -1,9 +1,7 @@
 import "./Styles/Homepage.css";
-import BlogList from "./BlogList";
 import { useState, useEffect } from "react";
 import Footer from "./Footer";
-import { Skeleton } from "antd";
-import { Stack } from "@mui/material";
+import userImage from "../assets/IMG_E3208.JPG";
 
 // import AuthorImage from "./AuthorImage";
 const Homepage = () => {
@@ -65,11 +63,14 @@ const Homepage = () => {
           <div className="text-content-name">
             I am Har<span className="name-auth">i</span>s
           </div>
+          <div className="text-profession">a software developer</div>
         </div>
-        <div className="homepage-img"></div>
+        <div className="homepage-img">
+          <img src={userImage} className="user-img" alt="user-image"></img>
+        </div>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
