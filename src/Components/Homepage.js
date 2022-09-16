@@ -63,7 +63,7 @@ const Homepage = () => {
           <div className="text-content-name">
             I am Har<span className="name-auth">i</span>s
           </div>
-          <div className="text-profession">Software DeveloperDeveloper</div>
+          <div className="text-profession">Software DeveloperDeveloperDeveloperDeveloper</div>
         </div>
         <div className="homepage-img">
           <img src={userImage} className="user-img" alt="user-image"></img>
