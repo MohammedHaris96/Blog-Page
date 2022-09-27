@@ -64,7 +64,7 @@ const Homepage = () => {
             I am Har<span className="name-auth">i</span>s
           </div>
           <div className="text-profession">
-            Software Developer
+            Software DeveloperSoftware DeveloperSoftware Developer
           </div>
         </div>
         <div className="homepage-img">
