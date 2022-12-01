@@ -63,14 +63,13 @@ const Homepage = () => {
           <div className="text-content-name">
             I am Har<span className="name-auth">i</span>s
           </div>
-          <div className="text-profession">Software Developer</div>
+          <div className="text-profession">Softwareee Developer</div>
         </div>
         <div className="homepage-img">
           <img src={userImage} className="user-img" alt="user-image"></img>
         </div>
       </div>
 
-      {/* <Footer /> */}
     </>
   );
 };
